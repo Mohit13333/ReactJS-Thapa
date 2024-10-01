@@ -1,3 +1,4 @@
+import styled from "styled-components";
 // const SeriesCard=(props)=>{
 const SeriesCard=({curelem})=>{
   // console.log(props)
