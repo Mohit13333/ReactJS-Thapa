@@ -8,6 +8,7 @@ import EventProps from "./components/eventprops";
 import EventPropagation from "./components/eventPropagation";
 import Counter from "./components/counter";
 import DerivedState from "./components/derivedState";
+import LiftStateup from "./components/liftStateup";
 // import Practise from "./Practises";
 
 
@@ -20,7 +21,9 @@ function App() {
       {/* <EventHandling/> */}
       {/* <EventPropagation/> */}
       {/* <Counter/> */}
-      <DerivedState/>
+      {/* <DerivedState/> */}
+
+      <LiftStateup/>
 
     </>
   );
