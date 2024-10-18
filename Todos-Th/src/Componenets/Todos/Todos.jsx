@@ -21,11 +21,15 @@ const Todos = () => {
         SetInputValue("");
     }
     // todo date and time
-    setInterval(()=>{
+    useEffect(()=>{
+    const interval=setInterval(()=>{
         const now =new Date();
-        const format=now.toLocaleString();
-        setDateTime(format);
+        const formatDate=now.toDateString();
+        const formatTime=now.toLocaleTimeString();
+        setDateTime(`${formatDate}-${formatTime}`);
     },1000)
+    return ()=>clearInterval(interval)
+},[]);
     // const formatedTime=now.toLocaleTimeString();
   return (
     <div>
