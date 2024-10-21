@@ -7,18 +7,19 @@ const User=()=>{
     setUser("Hello Mohit Singh")
 }
   return (
-    <div>
+    <>
+    <div className="text-center">
       <h1>Welcome to shortCut evaluation</h1>
       {isLoggedIn && <p>You are logged in</p>}
+      <br />
       {isLoggedIn?`User: ${user}`:"Please log in"}
-      <div>
-        <button onClick={()=>setIsLoggedIn(!isLoggedIn)} >Toggle loggin state</button>
-        <button onClick={()=>User("")}>Set User</button>
-        <button onClick={()=>setUser("")}>Clean User</button>
       </div>
-
-
-    </div>
+      <div className='flex justify-center'>
+        <button className='bg-black text-white rounded-md text-2xl p-1 ml-2' onClick={()=>setIsLoggedIn(!isLoggedIn)} >Toggle loggin state</button>
+        <button className='bg-black text-white rounded-md text-2xl p-1 ml-2' onClick={()=>User("")}>Set User</button>
+        <button className='bg-black text-white rounded-md text-2xl p-1 ml-2' onClick={()=>setUser("")}>Clean User</button>
+      </div>
+    </>
   )
 }
 

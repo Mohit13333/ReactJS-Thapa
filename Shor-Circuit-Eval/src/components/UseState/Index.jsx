@@ -7,10 +7,10 @@ const Index = () => {
     }
 
   return (
-    <div>
+    <div className='grid place-content-center' >
       <h1>UseStet Hook!</h1>
       <p>Count: {count}</p>
-      <button onClick={Increment}>Increment</button>
+      <button className='bg-black text-white rounded-md text-2xl p-1' onClick={Increment}>Increment</button>
     </div>
   )
 }

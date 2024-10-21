@@ -19,7 +19,7 @@ const Registration = () => {
   }
   return (
     <div>
-      <form className="mt-[30%]  bg-slate-100" onSubmit={handleFormSubmit}>
+      <form className="bg-slate-100" onSubmit={handleFormSubmit}>
         <div className="grid grid-rows-9 place-content-center">
           <h1>Signup</h1>
           <p>Create account.</p>
