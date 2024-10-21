@@ -10,8 +10,7 @@ const User=()=>{
     <div>
       <h1>Welcome to shortCut evaluation</h1>
       {isLoggedIn && <p>You are logged in</p>}
-      {isLoggedIn?`${user}`:"Please log in"}
-
+      {isLoggedIn?`User: ${user}`:"Please log in"}
       <div>
         <button onClick={()=>setIsLoggedIn(!isLoggedIn)} >Toggle loggin state</button>
         <button onClick={()=>User("")}>Set User</button>
