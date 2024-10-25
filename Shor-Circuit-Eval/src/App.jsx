@@ -10,10 +10,10 @@ function App() {
 
   return (
    <>
-   {/* <Registration/> */}
-   {/* <Chalange></Chalange>
+   <Registration/>
+   <Chalange></Chalange>
    <ShortCircuit/>
-   <Index/> */}
+   <Index/>
    <RegistrationReact/>
    </>
   )
