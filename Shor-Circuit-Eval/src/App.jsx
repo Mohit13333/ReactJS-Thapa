@@ -6,6 +6,7 @@ import Registration from './components/registraion/Registration'
 import RegistrationReact from './components/registraion/RegistrationReact'
 import LoginForm from './components/LoginForm/LoginForm'
 import ContactForm from './components/ContactForm/ContactForm'
+import UseEffect from './components/UseEffect/UseEffect'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +19,8 @@ function App() {
    <Index/>
    <RegistrationReact/> */}
    {/* <LoginForm/> */}
-   <ContactForm/>
+   {/* <ContactForm/> */}
+   <UseEffect/>
    </>
   )
 }
