@@ -7,6 +7,7 @@ import RegistrationReact from './components/registraion/RegistrationReact'
 import LoginForm from './components/LoginForm/LoginForm'
 import ContactForm from './components/ContactForm/ContactForm'
 import UseEffect from './components/UseEffect/UseEffect'
+import Effect from './components/UseEffect/Effect'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,7 +21,8 @@ function App() {
    <RegistrationReact/> */}
    {/* <LoginForm/> */}
    {/* <ContactForm/> */}
-   <UseEffect/>
+   {/* <UseEffect/> */}
+   <Effect/>
    </>
   )
 }

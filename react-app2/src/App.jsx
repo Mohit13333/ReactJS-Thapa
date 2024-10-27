@@ -16,12 +16,12 @@ function App() {
 
   return (
     <>
-      {/* <App2 /> */}
-      {/* <EventProps/> */}
-      {/* <EventHandling/> */}
-      {/* <EventPropagation/> */}
-      {/* <Counter/> */}
-      {/* <DerivedState/> */}
+      {/* <App2 />
+      <EventProps/>
+      <EventHandling/>
+      <EventPropagation/>
+      <Counter/>
+      <DerivedState/> */}
 
       <LiftStateup/>
 
