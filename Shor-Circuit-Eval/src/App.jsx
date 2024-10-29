@@ -8,6 +8,8 @@ import LoginForm from './components/LoginForm/LoginForm'
 import ContactForm from './components/ContactForm/ContactForm'
 import UseEffect from './components/UseEffect/UseEffect'
 import Effect from './components/UseEffect/Effect'
+import Cleanup from './components/UseEffect/Cleanup'
+import HowNotToFetchApi from './components/UseEffect/HowNotToFetchApi'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +24,9 @@ function App() {
    {/* <LoginForm/> */}
    {/* <ContactForm/> */}
    {/* <UseEffect/> */}
-   <Effect/>
+   {/* <Effect/> */}
+   {/* <Cleanup/> */}
+   <HowNotToFetchApi/>
    </>
   )
 }
