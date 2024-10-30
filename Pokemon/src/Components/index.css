@@ -11,6 +11,8 @@
   
   html {
     font-size: 62.5%;
+    -webkit-user-select: none;
+    user-select: none;
   }
   
   body {
