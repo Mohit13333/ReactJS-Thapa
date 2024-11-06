@@ -1,6 +1,7 @@
 import About from "./Components/ContextAPI/About";
 import Home from "./Components/ContextAPI/Home";
 import { BioProvider } from "./Components/ContextAPI/Index";
+import Services from "./Components/ContextAPI/Services";
 import ForwardRef from "./Components/ForwardRef";
 import ParentComponent from "./Components/PropDrilling";
 import UseId from "./Components/UseId";
@@ -13,7 +14,8 @@ function App() {
       {/* <ParentComponent/> */}
       <BioProvider>
         <Home />
-        <About/>
+        <About />
+        <Services />
       </BioProvider>
 
       {/* <ChildComponent/> */}
