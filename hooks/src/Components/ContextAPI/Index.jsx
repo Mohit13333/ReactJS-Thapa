@@ -1,4 +1,4 @@
-import React, { createContext } from 'react'
+import React, { createContext, useContext,use } from 'react'
 
 const BioContext=createContext();
 
@@ -9,4 +9,11 @@ const BioProvider=({children}) =>{
     return <BioContext.Provider value={{myName,myAge}}>{children}</BioContext.Provider>;
 }
 
-export {BioProvider,BioContext}
+// custom hooks 
+
+const useBioContext=()=>{
+    // const context=useContext(BioContext);
+    const context=use(BioContext);
+    return context;
+}
+export {BioProvider,BioContext,useBioContext}

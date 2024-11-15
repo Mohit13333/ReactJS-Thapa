@@ -1,8 +1,7 @@
-import React, { useContext } from 'react'
-import { BioContext } from './Index'
+import { useBioContext } from "./Index"
 
 const Home = () => {
-   const {myName,myAge}= useContext(BioContext)
+   const {myName,myAge}= useBioContext();
   return (
     <>
       <h1>Hello context API. my name is {myName}.I am {myAge} years old.</h1>
