@@ -3,6 +3,9 @@ import Home from "./Components/ContextAPI/Home";
 import { BioProvider } from "./Components/ContextAPI/Index";
 import Services from "./Components/ContextAPI/Services";
 import ForwardRef from "./Components/ForwardRef";
+import ReactMemo from "./Components/Memo/ReactMemo";
+import ReatMemo from "./Components/Memo/ReactMemo";
+import UseMemo from "./Components/Memo/UseMemo";
 import ParentComponent from "./Components/PropDrilling";
 import UseId from "./Components/UseId";
 import Reducer from "./Components/useReducerHook/Reducer";
@@ -18,7 +21,9 @@ function App() {
         <About />
         <Services />
       </BioProvider> */}
-      <Reducer />
+      {/* <Reducer /> */}
+      <ReactMemo/>
+      {/* <UseMemo/> */}
       {/* <ChildComponent/> */}
       {/* <UseRef/>
       <ForwardRef/> */}
