@@ -25,7 +25,7 @@ const AddForm = ({data,setData,updateData,setUpdateData}) => {
   const addPostData=async()=>{
   const res= await postData(addData);
   console.log(res)
-  if(res.status==201){
+  if(res.status===201){
     setData([...data,res.data]);
     setAddData({
         title: "",
