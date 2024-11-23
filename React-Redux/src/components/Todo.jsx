@@ -1,19 +1,20 @@
 import { FiTrash2, FiPlus } from "react-icons/fi";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addTask, deleteTask, fetchTask } from "../store/Store";
+import { addTask, deleteTask } from "../features/taskSlice";
+// import { addTask, deleteTask, } from "../store/Store";
 
 const Todo = () => {
   const [task, setTask] = useState("");
-  const state = useSelector((state) => state.task);
+  const state = useSelector((state) => state.taskReducer.task);
   const dispatch = useDispatch();
   const handleFormSubmit = () => {
     dispatch(addTask(task));
     return setTask("");
   };
-  const handleFetchTask = () => {
-    dispatch(fetchTask())
-  }
+  // const handleFetchTask = () => {
+  //   dispatch(fetchTask())
+  // }
 
   const handleDeleteTask = (index) => {
     dispatch(deleteTask(index));
@@ -39,7 +40,7 @@ const Todo = () => {
         >
           <FiPlus className="text-xl" />
         </button>
-        <button onClick={handleFetchTask} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 flex items-center justify-center">FetchTask</button>
+        {/* <button onClick={handleFetchTask} className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300 flex items-center justify-center">FetchTask</button> */}
       </div>
       <ul className="divide-y divide-gray-200">
         {state.map((task, index) => (
